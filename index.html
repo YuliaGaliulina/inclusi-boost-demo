@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InclusiBoost Demo</title>
+    <style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: 0;
+			padding: 20px;
+			background-color: #FFF5E6;
+			line-height: 1.6;
+			color: #4A4A4A;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			background-color: #FFFFFF;
+			padding: 30px;
+			border-radius: 20px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		}
+
+		h1, h2, h3 {
+			color: #FF6B6B;
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 30px;
+			font-size: 2.5em;
+		}
+
+		.color-blocks {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 15px;
+			margin: 30px 0;
+		}
+
+		.color-block {
+			width: 110px;
+			height: 110px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-weight: bold;
+			border-radius: 15px;
+			transition: all 0.3s ease;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+		}
+
+		.color-block:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+		}
+
+		.features {
+			margin-top: 30px;
+		}
+
+		.feature {
+			background-color: #FFF9EC;
+			padding: 20px;
+			margin-bottom: 20px;
+			border-radius: 15px;
+			transition: all 0.3s ease;
+		}
+
+		.feature:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+		}
+
+		.section {
+			margin-bottom: 30px;
+			padding: 20px;
+			background-color: #FFF9EC;
+			border-radius: 15px;
+		}
+
+		p, ul {
+			margin-bottom: 15px;
+		}
+
+		.accessibility-icon {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			width: 50px;
+			height: 50px;
+			background-color: #FF6B6B;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		@media screen and (max-width: 767px) {
+			.accessibility-icon {
+				right: 4px;
+			}
+		}
+
+		.accessibility-icon img {
+			width: 30px;
+			height: 30px;
+		}
+    </style>
+    <script src="https://inclusi-boost.s3.amazonaws.com/dist/inclusi-boost.js"></script>
+</head>
+<body>
+<div class="container inclusi-boost-content">
+    <h1>Making Websites Work for Everyone</h1>
+
+    <div class="section">
+        <h2>Why Accessibility Matters</h2>
+        <p>Welcome! The internet should be a place where everyone can easily use websites, regardless of their abilities
+            or how they access online content. This concept is known as "web accessibility."</p>
+
+        <p>Here's why it's important:</p>
+        <ul>
+            <li><strong>Universal Access:</strong> It allows all people to use online information and services.</li>
+            <li><strong>Broader Connections:</strong> When websites are easy to use, more people can be part of online
+                communities.
+            </li>
+            <li><strong>Improved User Experience:</strong> Features that help some people often end up making things
+                better for everyone!
+            </li>
+            <li><strong>Innovation Driver:</strong> Considering different needs leads to creative solutions that can
+                improve websites for all users.
+            </li>
+            <li><strong>Empowerment:</strong> It helps people use the internet independently, boosting confidence and
+                freedom.
+            </li>
+        </ul>
+
+        <p>The goal is to make the internet a place where everyone feels welcome and can easily find and use what they
+            need.</p>
+    </div>
+
+    <div class="color-blocks">
+        <div class="color-block" style="background-color: #FF6B6B;">Coral</div>
+        <div class="color-block" style="background-color: #4ECDC4;">Mint</div>
+        <div class="color-block" style="background-color: #FFD93D;">Sunshine</div>
+        <div class="color-block" style="background-color: #FF8CC8;">Blush</div>
+        <div class="color-block" style="background-color: #6BCB77;">Leaf</div>
+        <div class="color-block" style="background-color: #4D96FF;">Sky</div>
+        <div class="color-block" style="background-color: #9D4EDD;">Lavender</div>
+        <div class="color-block" style="background-color: #B67162;">Terracotta</div>
+        <div class="color-block" style="background-color: #87AAAA;">Sage</div>
+    </div>
+
+    <div class="features">
+        <h2>Accessibility Features</h2>
+        <p>These features are designed to make websites easier to use for everyone. They offer options to change how a
+            website looks and works, making it more comfortable for you to use.</p>
+
+        <div class="feature">
+            <h3>Adjust Content Size</h3>
+            <p>This feature allows you to make everything on the website bigger. It's like using a magnifying glass to
+                see things more clearly. You can make text and images larger if they're hard to see, improving
+                readability and making the content easier to interact with.</p>
+        </div>
+        <div class="feature">
+            <h3>Customize Text Style</h3>
+            <p>Everyone has a favorite style of writing that's easiest for them to read. This option lets you pick the
+                style of text that's most comfortable for your eyes. You can choose from different text styles to find
+                the one that feels just right for you.</p>
+        </div>
+        <div class="feature">
+            <h3>Color Adjustment</h3>
+            <p>Some people see colors differently, which can make it hard to use websites. This feature changes the
+                colors on the website to make them easier to see and understand. It's like putting on a pair of special
+                glasses that help you see all the important parts of the website clearly.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Using These Features</h2>
+        <p>To access these helpful accessibility features, look for the accessibility icon. It's a small circular button
+            located in the top right corner of the website. Simply click on this icon to activate the accessibility
+            features and customize your browsing experience for maximum comfort and usability.</p>
+    </div>
+</div>
+
+<div class="accessibility-icon">
+    <inclusi-boost></inclusi-boost>
+</div>
+</body>
+</html>
